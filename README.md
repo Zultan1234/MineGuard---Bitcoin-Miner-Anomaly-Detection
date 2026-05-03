@@ -12,7 +12,7 @@ Software was installed using the following:
 
 They have to be included in PATH for everything to work directly out of the box. Otherwise, you must modify the file start.bat after install. 
 
-#Step 1:
+## Step 1:
 Install the files. It is recommended to isntall the compressed file, then extract it. 
 <img width="568" height="93" alt="image" src="https://github.com/user-attachments/assets/ba6edc7a-917f-425d-8bf2-00d4bf259be1" />
 
