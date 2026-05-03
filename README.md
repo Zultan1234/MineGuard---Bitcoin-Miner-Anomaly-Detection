@@ -16,7 +16,7 @@ They have to be included in PATH for everything to work directly out of the box.
 Install the files. It is recommended to isntall the compressed file, then extract it. 
 <img width="568" height="93" alt="image" src="https://github.com/user-attachments/assets/ba6edc7a-917f-425d-8bf2-00d4bf259be1" />
 
-#Setup Chatbot (optional):
+## Setup Chatbot (optional):
 If you want to setup the chatbot to be integrated within the user interface, go into ..\miner-monitor\backend\data, and create a text file called gemini_key.txt. 
 
 <img width="616" height="185" alt="image" src="https://github.com/user-attachments/assets/f212ca4e-9c89-4b87-8aa8-7adbdf0651bb" />
@@ -84,5 +84,5 @@ Leave system on for some time, until there us enough data points to tran the mod
 ## Anomaly detection
 After training the model, if it detects an anomaly (irregular data) it will turn yellow. If there is a critical issue, it will turn red. 
 
-#Using the chatbot:
+## Using the chatbot:
 You can use the chat bot for any questions about any miner. It uses data from the API and can diagnose the miner.
