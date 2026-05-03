@@ -1,6 +1,15 @@
 # MineGuard---Bitcoin-Miner-Anomaly-Detection
 A monitoring dashboard for ASIC crypto miners. Tracks hashrate, temperatures, and fan health in real time, learns normal behavior, and alerts you to hardware anomalies before they cause downtime.
 
+Example of fan blockage:
+
+<img width="795" height="430" alt="image" src="https://github.com/user-attachments/assets/be08a1cd-e4ad-4fad-82f0-6b48015ddfa4" />
+
+Example of normal operation:
+<img width="791" height="423" alt="image" src="https://github.com/user-attachments/assets/0e88f336-ecc7-4ff9-ab2f-cd1d5a07475d" />
+
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 In order to setup this tool, please follow the setup steps provided below:
@@ -86,3 +95,5 @@ After training the model, if it detects an anomaly (irregular data) it will turn
 
 ## Using the chatbot:
 You can use the chat bot for any questions about any miner. It uses data from the API and can diagnose the miner.
+
+
