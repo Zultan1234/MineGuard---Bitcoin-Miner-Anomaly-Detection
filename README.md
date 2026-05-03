@@ -1,4 +1,4 @@
-<img width="761" height="112" alt="image" src="https://github.com/user-attachments/assets/04042fab-7188-4826-8c4e-26cb9104b365" /># MineGuard---Bitcoin-Miner-Anomaly-Detection
+# MineGuard---Bitcoin-Miner-Anomaly-Detection
 A monitoring dashboard for ASIC crypto miners. Tracks hashrate, temperatures, and fan health in real time, learns normal behavior, and alerts you to hardware anomalies before they cause downtime.
 
 ------------------------------------------------------------------------------------------------------------------------
