@@ -254,8 +254,9 @@ We provide two datasets collected from a real Antminer L3+ for testing and evalu
 
 | File | Description | Size |
 |------|-------------|------|
-| `data/normal_operation.csv` | Clean baseline data, normal mining | ~13,000 readings |
-| `data/anomaly_scenarios.csv` | Same data with injected fault events at the end | ~14,000 readings |
+| `data/normal_operation.xlsx` | Clean baseline data, normal mining | ~13,000 readings |
+| `data/anomaly_scenarios.xlsx` | Same data with injected fault events at the end | ~14,000 readings |
+| `data/collector.py` | Python script to collect data and place it into an excel sheet |  |
 
 The anomaly dataset includes 6 fault types (fan blockage, chip overheating, board imbalance, hardware error spike, hashrate drop, thermal runaway) generated using a physics-based model calibrated against real L3+ baseline values.
 
@@ -263,15 +264,6 @@ The anomaly dataset includes 6 fault types (fan blockage, chip overheating, boar
 
 ## Docker Deployment (Advanced)
 
-For users comfortable with Docker:
-
-```bash
-docker compose up --build
-```
-
-- Frontend: [http://localhost:3000](http://localhost:3000)
-- Backend API: [http://localhost:8000](http://localhost:8000)
-- API docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 > Docker has been tested on Windows. Linux and macOS compatibility is not guaranteed.
 
@@ -326,8 +318,9 @@ miner-monitor/
 │       └── utils/
 │           └── api.js               # All fetch() calls + stream helper
 ├── data/
-│   ├── normal_operation.csv         # ~13k readings from real L3+
-│   └── anomaly_scenarios.csv        # ~14k readings with injected faults
+│   ├── normal_operation.xlsx         # ~13k readings from real L3+
+│   ├── anomaly_scenarios.xlsx        # ~14k readings with injected faults
+    └── collector.py                  # used to collect the excel files
 ├── notebooks/
 │   └── 04_evaluation.ipynb          # Full evaluation: ROC-AUC, F1, PR-AUC
 ├── docker-compose.yml
