@@ -32,6 +32,9 @@ Simple threshold alerts (e.g. "alert if temp > 90°C") miss the subtle early war
 
 <img width="814" height="318" alt="image" src="https://github.com/user-attachments/assets/2a44c07a-6bfe-416e-b508-b2574e0d4e57" />
 
+**Additional test: Increasing frequency of board 4**
+<img width="635" height="88" alt="image" src="https://github.com/user-attachments/assets/1f467359-2dea-4840-82b0-3619aa735b84" />
+
 
 ---
 
