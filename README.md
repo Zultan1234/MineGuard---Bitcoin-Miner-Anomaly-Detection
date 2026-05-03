@@ -32,15 +32,15 @@ Copy the key and paste it in the gemini_key.txt file, then continue.
 Note that this is optional, however it allows you to use a chatbot that can diagnose your miner using the live data, and give you suggestions.
 
 
-#Step 2:
+## Step 2:
 
 Once extracted, enter the new folder miner-monitor, and if all dependancies mentioned above are in PATH, then you can simply run start.bat, if it gives a warning, press run:
 <img width="498" height="274" alt="image" src="https://github.com/user-attachments/assets/02df93af-7a64-4ec6-93d5-4e7a69776e4b" />
 
-#Step 4:
+## Step 4:
 This will open a CMD window, and it will install some python packages for you. This might take some time. Do not close the window, and wait until it is done. 
 
-#Step 5:
+## Step 5:
 If the window closes, then just re-run start.bat, and it should start up the server. If you are running into some problems in accessing the server, try setting inbound and outbound rules in Windows Defender Firewall. Set them for both frontend and backend ports 5001 and 5002
 
 
@@ -57,7 +57,7 @@ Make sure that all TCP connections are allowed on these ports to avoid any
 
 <img width="535" height="428" alt="image" src="https://github.com/user-attachments/assets/6a8bad64-4f87-4345-ad1a-797160709f0b" />
 
-#Step 6:
+## Step 6:
 Now, the server is up, and the server must be running on the same netowrk as the crypto-miners, in order to access their API. Therefore, you must know the IP of each miner before hand, or you can find it by entering your rourter and checking for connections. Another way is to use the command: "arp -a" in CMD (only if you used the computer to access the miners beforehand. 
 
 Click: Add miner.
@@ -75,13 +75,13 @@ Set the polling frequency to any that you like. We used 15 second windows in tes
 
 After setting up the miner, it should be visible in the dashboard. 
 
-#Training the model:
+## Training the model:
 
 Now go to the Training tab, and check the training requirements. Make sure your miner is online and collecting data in the dashboard. 
 
 Leave system on for some time, until there us enough data points to tran the model. Usually more than a few thousand is good. 12 hours of data collection is a good amount, howver you can leave it for longer and train it once finished.
 
-#Anomaly detection
+## Anomaly detection
 After training the model, if it detects an anomaly (irregular data) it will turn yellow. If there is a critical issue, it will turn red. 
 
 #Using the chatbot:
