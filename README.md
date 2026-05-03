@@ -371,23 +371,55 @@ Full interactive docs available at [http://localhost:5002/docs](http://localhost
 ---
 
 <!-- ============================================================
-     COMING SOON — TELEGRAM ALERTS
-     This section can be removed if the feature is not completed.
+     TELEGRAM ALERTS SECTION
+     This section can be removed if the feature is not shipped.
      ============================================================ -->
 
-## 📱 Coming Soon — Telegram Alerts
+## 📱 Telegram Alerts
 
-We are working on a Telegram bot integration that will send an instant message to your phone the moment an anomaly is detected on any of your miners — so you don't need to keep the dashboard open to stay informed.
+MineGuard can send an instant Telegram message to your phone the moment an anomaly is detected on any of your miners — so you don't need to keep the dashboard open to stay informed.
 
-**Planned behavior:**
-- Sends a message when status changes to YELLOW or RED
-- Includes the miner name, alert type, and top contributing features
-- Sends an all-clear message when status returns to GREEN
+**What you receive:**
+- A message when any miner changes to YELLOW or RED status
+- The miner name, alert type, and top contributing features
+- An all-clear message when the status returns to GREEN
 
-This feature is not yet available. Watch this repo for updates.
+<img width="1080" height="1403" alt="Telegram notification" src="https://github.com/user-attachments/assets/732da950-87e6-4e4e-b502-58219e72d0e0" />
+
+<img width="1080" height="2185" alt="Telegram message showing yellow state" src="https://github.com/user-attachments/assets/35f8b11f-39ba-4008-8761-6d9f5430ad1d" />
+
+### Setting Up Telegram Alerts
+
+**Step 1 — Create a Telegram bot and get your token**
+
+1. Open Telegram and search for **@BotFather**
+2. Send the command `/newbot` and follow the prompts to name your bot
+3. BotFather will give you a **bot token** that looks like: `123456789:ABCdefGhIJKlmNoPQRstuVWXyz`
+
+<img width="574" height="245" alt="BotFather setup" src="https://github.com/user-attachments/assets/93f846bb-2d98-4a6c-9d2e-74cda39e6a10" />
+
+**Step 2 — Get your Chat ID**
+
+1. Start a conversation with your new bot on Telegram (send it any message)
+2. Open this URL in your browser, replacing `YOUR_TOKEN` with your bot token:
+   ```
+   https://api.telegram.org/botYOUR_TOKEN/getUpdates
+   ```
+3. Find the `"id"` value inside `"chat"` in the response — that is your Chat ID
+
+**Step 3 — Save your credentials**
+
+Navigate to `..\miner-monitor\backend\data\` and create two text files:
+
+| File | Contents |
+|------|----------|
+| `telegram_chat_token.txt` | Your bot token from BotFather |
+| `telegram_chat_id.txt` | Your Chat ID from Step 2 |
+
+These files sit alongside `gemini_key.txt` in the same folder. Restart `start.bat` after saving them.
 
 <!-- ============================================================
-     END COMING SOON SECTION
+     END TELEGRAM ALERTS SECTION
      ============================================================ -->
 
 ---
