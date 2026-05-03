@@ -28,6 +28,11 @@ Simple threshold alerts (e.g. "alert if temp > 90°C") miss the subtle early war
 
 <img width="791" height="423" alt="Normal operation" src="https://github.com/user-attachments/assets/0e88f336-ecc7-4ff9-ab2f-cd1d5a07475d" />
 
+**Miner turned off:**
+
+<img width="814" height="318" alt="image" src="https://github.com/user-attachments/assets/2a44c07a-6bfe-416e-b508-b2574e0d4e57" />
+
+
 ---
 
 ## Features
