@@ -5,6 +5,9 @@ Example of fan blockage:
 
 <img width="795" height="430" alt="image" src="https://github.com/user-attachments/assets/be08a1cd-e4ad-4fad-82f0-6b48015ddfa4" />
 
+Chat bot mention to check fan:
+<img width="818" height="430" alt="image" src="https://github.com/user-attachments/assets/b2b2e053-46cb-486f-8bef-df610e0ed7b6" />
+
 Example of normal operation:
 <img width="791" height="423" alt="image" src="https://github.com/user-attachments/assets/0e88f336-ecc7-4ff9-ab2f-cd1d5a07475d" />
 
@@ -49,6 +52,9 @@ Once extracted, enter the new folder miner-monitor, and if all dependancies ment
 ## Step 4:
 This will open a CMD window, and it will install some python packages for you. This might take some time. Do not close the window, and wait until it is done. 
 
+<img width="862" height="449" alt="image" src="https://github.com/user-attachments/assets/5a58f236-b19b-410f-86ea-0e543c1ddeaf" />
+
+
 ## Step 5:
 If the window closes, then just re-run start.bat, and it should start up the server. If you are running into some problems in accessing the server, try setting inbound and outbound rules in Windows Defender Firewall. Set them for both frontend and backend ports 5001 and 5002
 
@@ -68,6 +74,9 @@ Make sure that all TCP connections are allowed on these ports to avoid any
 
 ## Step 6:
 Now, the server is up, and the server must be running on the same netowrk as the crypto-miners, in order to access their API. Therefore, you must know the IP of each miner before hand, or you can find it by entering your rourter and checking for connections. Another way is to use the command: "arp -a" in CMD (only if you used the computer to access the miners beforehand. 
+
+<img width="938" height="431" alt="image" src="https://github.com/user-attachments/assets/8737eba2-b816-4ac0-8ae5-671cfd126a83" />
+
 
 Click: Add miner.
 
@@ -96,4 +105,7 @@ After training the model, if it detects an anomaly (irregular data) it will turn
 ## Using the chatbot:
 You can use the chat bot for any questions about any miner. It uses data from the API and can diagnose the miner.
 
+## Importing data:
+You are also able to import data and export data and model.
+<img width="498" height="384" alt="image" src="https://github.com/user-attachments/assets/1b08d6c6-ac9d-4a80-8744-1ab44f3ea24c" />
 
